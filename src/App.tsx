@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './assets/logo.svg';
+import {ReactComponent as Logo} from './assets/logo.svg';
 import './App.css';
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
         >
           Learn React
         </a>
+        <Logo/>
       </header>
+      {process.env.REACT_APP_API_URL}
     </div>
   );
 }
